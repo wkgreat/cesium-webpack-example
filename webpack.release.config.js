@@ -26,6 +26,7 @@ module.exports = [{
         mainFields: ['module', 'main']
     },
     module: {
+        unknownContextCritical: false,
         rules: [{
             test: /\.css$/,
             use: ['style-loader', { loader: 'css-loader' }],
